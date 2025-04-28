@@ -74,7 +74,7 @@ const data = [
     { name: 'Dreamweaver(DW)2018', link1: 'https://pan.xunlei.com/s/VOEZtPVXt9Ep_CXOFteg0u3XA1?pwd=8aat#', link2: '#' },
     { name: 'Dreamweaver(DW)2017', link1: 'https://pan.xunlei.com/s/VOEZtX9kMtcmj_zSxEFWR_P2A1?pwd=p42x#', link2: '#' },
 
-    { name: 'illustrator(Ai)2025', link1: 'https://pan.xunlei.com/s/VOEZtoUGU-TBFZ0EnxIy3DypA1?pwd=wnzz#', link2: '#' },
+    { name: 'illustrator(Ai)2025集合', link1: 'https://pan.xunlei.com/s/VOOuXsWajlfLRVMFYLdNgqOuA1?pwd=qwna#', link2: '#' },
     { name: 'illustrator(Ai)2024', link1: 'https://pan.xunlei.com/s/VOEZu3zh_7XNxteNQjrqthIfA1?pwd=fme6#', link2: '#' },
     { name: 'illustrator(Ai)2023', link1: 'https://pan.xunlei.com/s/VOEZuBkRhr6W53jfBS8SgNvzA1?pwd=z2b3#', link2: '#' },
     { name: 'illustrator(Ai)2022', link1: 'https://pan.xunlei.com/s/VOEZuiqJTmi3r5axx3QCsizTA1?pwd=zdrz#', link2: '#' },

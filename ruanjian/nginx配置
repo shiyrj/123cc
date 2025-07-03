@@ -9,18 +9,21 @@ http {
     include /etc/nginx/mime.types;
     default_type application/octet-stream;
 
+    client_max_body_size 1M;
+
+    #shiyrj
     server {
          #HTTPS的默认访问端口443。
          #如果未在此处配置HTTPS的默认访问端口，可能会造成Nginx无法启动。
          listen 443 ssl;
 
          #填写证书绑定的域名
-         server_name guangsu.fun;
+         server_name shiyrj.top;
 
          #填写证书文件绝对路径
-         ssl_certificate cert/guangsu.fun.pem;
+         ssl_certificate cert/shiyrj.top.pem;
          #填写证书私钥文件绝对路径
-         ssl_certificate_key cert/guangsu.fun.key;
+         ssl_certificate_key cert/shiyrj.top.key;
 
          ssl_session_cache shared:SSL:1m;
          ssl_session_timeout 5m;
@@ -30,13 +33,13 @@ http {
 
 
         location / {
-            root /guangsu/guangsu;
+            root /shiyrj;
             index index.html index.htm;
             try_files $uri $uri/ =404;
         }
 
         location ~* \.(css|js)$ {
-            root /guangsu/guangsu;
+            root /shiyrj;
             expires 1d;
             add_header Cache-Control "public";
         }
@@ -44,23 +47,24 @@ http {
 
     server {
         listen 80;
-        server_name guangsu.fun;
+        server_name shiyrj.top;
 
         # rewrite ^(.*)$ https://$host$1;
 
         location / {
-            root /guangsu/guangsu;
+            root /shiyrj;
             index index.html index.htm;
             try_files $uri $uri/ =404;
         }
 
         location ~* \.(css|js)$ {
-            root /guangsu/guangsu;
+            root /shiyrj;
             expires 1d;
             add_header Cache-Control "public";
         }
     }
 
+    #520rj
     server {
          #HTTPS的默认访问端口443。
          #如果未在此处配置HTTPS的默认访问端口，可能会造成Nginx无法启动。
@@ -93,7 +97,7 @@ http {
             add_header Cache-Control "public";
         }
     }
-    
+
     server {
         listen 80;
         server_name 520rj.top;
@@ -115,6 +119,39 @@ http {
 
     #rjzs
     server {
+         #HTTPS的默认访问端口443。
+         #如果未在此处配置HTTPS的默认访问端口，可能会造成Nginx无法启动。
+         listen 443 ssl;
+
+         #填写证书绑定的域名
+         server_name rjzs.top;
+
+         #填写证书文件绝对路径
+         ssl_certificate cert/rjzs.top.pem;
+         #填写证书私钥文件绝对路径
+         ssl_certificate_key cert/rjzs.top.key;
+
+         ssl_session_cache shared:SSL:1m;
+         ssl_session_timeout 5m;
+
+         #表示优先使用服务端加密套件。默认开启
+         #ssl_prefer_server_ciphers on;
+
+
+        location / {
+            root /rjzs;
+            index index.html index.htm;
+            try_files $uri $uri/ =404;
+        }
+
+        location ~* \.(css|js)$ {
+            root /rjzs;
+            expires 1d;
+            add_header Cache-Control "public";
+        }
+    }
+
+    server {
         listen 80;
         server_name rjzs.top;
 
@@ -135,6 +172,39 @@ http {
 
     #rjxz
     server {
+         #HTTPS的默认访问端口443。
+         #如果未在此处配置HTTPS的默认访问端口，可能会造成Nginx无法启动。
+         listen 443 ssl;
+
+         #填写证书绑定的域名
+         server_name rjxz.top;
+
+         #填写证书文件绝对路径
+         ssl_certificate cert/rjxz.top.pem;
+         #填写证书私钥文件绝对路径
+         ssl_certificate_key cert/rjxz.top.key;
+
+         ssl_session_cache shared:SSL:1m;
+         ssl_session_timeout 5m;
+
+         #表示优先使用服务端加密套件。默认开启
+         #ssl_prefer_server_ciphers on;
+
+
+        location / {
+            root /rjxz;
+            index index.html index.htm;
+            try_files $uri $uri/ =404;
+        }
+
+        location ~* \.(css|js)$ {
+            root /rjxz;
+            expires 1d;
+            add_header Cache-Control "public";
+        }
+    }
+
+    server {
         listen 80;
         server_name rjxz.top;
 
@@ -152,7 +222,77 @@ http {
             add_header Cache-Control "public";
         }
     }
+
+    #123cc
+    server {
+         #HTTPS的默认访问端口443。
+         #如果未在此处配置HTTPS的默认访问端口，可能会造成Nginx无法启动。
+         listen 443 ssl;
+
+         #填写证书绑定的域名
+         server_name 123cc.top;
+
+         #填写证书文件绝对路径
+         ssl_certificate cert/123cc.top.pem;
+         #填写证书私钥文件绝对路径
+         ssl_certificate_key cert/123cc.top.key;
+
+         ssl_session_cache shared:SSL:1m;
+         ssl_session_timeout 5m;
+
+         #表示优先使用服务端加密套件。默认开启
+         #ssl_prefer_server_ciphers on;
+
+
+        location / {
+            root /123cc;
+            index index.html index.htm;
+            try_files $uri $uri/ =404;
+        }
+
+        location ~* \.(css|js)$ {
+            root /123cc;
+            expires 1d;
+            add_header Cache-Control "public";
+        }
+    }
+
+    server {
+        listen 80;
+        server_name 123cc.top;
+
+        # rewrite ^(.*)$ https://$host$1;
+
+        location / {
+            root /123cc;
+            index index.html index.htm;
+            try_files $uri $uri/ =404;
+        }
+
+        location ~* \.(css|js)$ {
+            root /123cc;
+            expires 1d;
+            add_header Cache-Control "public";
+        }
+    }
+
+    server {
+        listen 80;
+        server_name 51zyfx.com;  # 改为域名或服务器IP
+
+        location / {
+            proxy_pass http://localhost:8080;  # 转发到Spring Boot
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+
+            # 重要：解决重定向问题
+            proxy_set_header X-Forwarded-Prefix /;
+        }
+    }
 }
+
 
 
 
